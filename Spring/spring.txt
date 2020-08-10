@@ -1,0 +1,23 @@
+1.Spring是什么，包含哪些模块？
+
+2.springmvc和spring-boot区别
+
+3.springCloud和springBoot区别
+    springCloud是基于springBoot的一套分布式微服务解决方案包括配置管理、注册中心、服务发现，限流、网管
+5.@Autowired的实现原理
+
+6.Bean的默认作用范围是什么？其他的作用范围？
+    默认的是Single
+    其他还有prototype,request,session,globalsession
+
+7.IOC、AOP是什么，除了面向切面编程还有什么？
+    aop面向切面编程，是对面向对象对补充，用于事务、日志、权限等公共部分，减少重复代码、降低耦合
+    是通过动态代理实现的
+
+8.jdk动态代理、cglib代理区别
+    JDK是通过实现于代理类共同接口(无接口的)
+    cglib是利用asm字节码技术，动态生成被代理类的子类（声明final的类不能用cglib）
+
+9.MQ消息丢失，如何解决？什么情况下会消息丢失？
+
+10.SpringBoot如何实现分布式的
