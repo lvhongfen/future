@@ -4,6 +4,8 @@
 
 3.springCloud和springBoot区别
     springCloud是基于springBoot的一套分布式微服务解决方案包括配置管理、注册中心、服务发现，限流、网管
+4.dubbo与SpringCloud区别
+
 5.@Autowired的实现原理
 
 6.Bean的默认作用范围是什么？其他的作用范围？
@@ -21,3 +23,7 @@
 9.MQ消息丢失，如何解决？什么情况下会消息丢失？
 
 10.SpringBoot如何实现分布式的
+
+11.Spring打包的适合war，jar有什么区别
+
+12.静态代理、动态代理的实现方式

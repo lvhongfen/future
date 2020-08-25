@@ -18,6 +18,7 @@
     重要参考指标rows 扫描行数
     其他指标extra
 6.事务到特性、隔离级别？mySQL默认隔离级别，其他关系型数据库默认隔离级别？
+
 7.InnoDB,MyIsam区别
     1)InnnoDB支持事务、MyISAM不支持
     2）InnoDB支持表锁、行锁，MyIsam只支持表锁

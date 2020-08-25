@@ -1,9 +1,7 @@
 package dataStructure.sort;
 
 import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import java.util.concurrent.*;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
@@ -88,13 +86,22 @@ public class QuikSort {
     System.out.println(new String("hello")==new String("hello"));
     Hashtable hashtable=new Hashtable();
 //    hashtable.put();
-    HashMap hashMap=new HashMap();
+    HashMap hashMap=new HashMap(10);
     hashMap.put("abc","abc");
+    ConcurrentHashMap conHashMap=new ConcurrentHashMap();
+    conHashMap.put("abc","abc");
+    conHashMap.get("abc");
+    conHashMap.remove("abc");
+    System.out.println(hashMap);
+    Hashtable table=new Hashtable();
+    table.put("abc","abc");
 //    HashMap hashMap1=new ConcurrentHashMap<>();
 //    hashMap1.put();
 
+    List list=new ArrayList();
 
     LinkedList linkedList=new LinkedList();
+
 
 //    ExecutorService executorService= Executors.newSingleThreadExecutor();
     String str=null;
@@ -104,6 +111,18 @@ public class QuikSort {
     int b=10 >>1;
     System.out.println(b);
     ReentrantLock lock=new ReentrantLock();
+    System.out.println(1 << 30);
+    System.out.println(Integer.MAX_VALUE);
+    System.out.println(0x7FFFFFFF);
 
+//    ExecutorService service=Executors.newFixedThreadPool(1);
+//    Future future=service.submit();
+//            service.execute();
+    String a = "123";
+    String c = "123";
+    System.out.println(a==c);
+    System.out.println(Math.min(20,50));
+//    CompletableFuture.runAsync()
   }
+
 }

@@ -1,0 +1,32 @@
+
+1.常见的线程池，适用的场景
+newSingleThreadPool：创建单个线程
+newCacheThreadPool：根据需要创建
+newFixedThreadPool：创建定长线程池
+newScheduleThreadPool:多用于Task,TimerTask等执行定时任务呢之类的
+
+2.excute，submit方法的区别
+定义不同 excute方法来源于Excutor接口，submit来源于ExcutorService接口
+参数不同 excute参数只能是Runnable,submit参数有Runnable,Callable
+返回值不同 submit有返回值future
+submit可以捕获调用过程中的异常,进行异常处理
+
+
+4.java线程池核心参数
+    corePoolSize线程池初始化大小
+    maxPoolSize线程池最大线程数
+    time 线程池空余线程超时回收时间
+    timeSecond 时间单位
+    blockQueue 任务队列
+        (ArrayBlockingQueue 有界队列最大为maxPoolSize，当队列已满则会创建新的线程执行任务，直到达到线程池最大线程数
+            LinkedBlockingQueue 无界队列最大为Integer.maxValue,也就说说MaxPoolSize不起作用
+            SyncronousQueue 不缓存任务的阻塞队列，当有新任务进来时则新建一个线程执行任务，直到达到最大线程数量执行拒绝策略
+            PriorityBlockingQueue 优先级队列，优先级通过comprator实现)
+     threadFactory 线程工厂比如给线程命名，是否为deamon线程等
+     handler 拒绝策略
+        CallerRunsPolicy 调用者执行当前线程
+        discardolicy 拒绝任务并抛出RejectedExcutionException异常
+        abortPolicy 拒绝任务
+        abortOldestPolicy去掉队列中早期任务，放入最新任务
+
+4.创建一个线程池的过程（同上）
